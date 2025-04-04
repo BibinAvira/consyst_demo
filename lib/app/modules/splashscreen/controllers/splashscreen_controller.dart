@@ -22,19 +22,10 @@ class SplashscreenController extends GetxController {
   }
 
   void Check_authentication_and_navigate() async {
-    final hive_taskdata = Hive.box('flashcurrent_localdb');
     await Future.delayed(
       Duration(seconds: 8),
       () {
-        try {
-          if (hive_taskdata.get('authentication') == null) {
-            Get.offAndToNamed(Routes.AUTHENTICATION);
-          } else {
-            Get.offAndToNamed(Routes.NOTES);
-          }
-        } catch (e) {
-          Get.offAndToNamed(Routes.AUTHENTICATION);
-        }
+        Get.offAndToNamed(Routes.AUTHENTICATION);
       },
     );
   }
