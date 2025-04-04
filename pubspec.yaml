@@ -50,7 +50,6 @@ dependencies:
   carousel_slider: ^5.0.0
   intl: ^0.19.0
   smooth_page_indicator: ^1.2.1
-  url_launcher: ^6.3.1
   auto_size_text_field: ^2.2.4
   auto_size_text: ^3.0.0
   curved_navigation_bar: ^1.0.6
@@ -80,15 +79,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/images/Bolt.png
-     - assets/images/Flash Current.png
-     - assets/images/newimage.jpg
-     - assets/lotties/startpagelottie.json
-     - assets/images/2289_SkVNQSBGQU1PIDEwMjgtMTE2 1.png
-     - assets/images/explore.jpeg
-     - assets/images/premium_photo-1677002240252-af3f88114efc.jpeg
-     - assets/images/live_nation_cover.jpeg
-     - assets/images/images.jpeg
-     - assets/images/istockphoto-1500563478-612x612.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

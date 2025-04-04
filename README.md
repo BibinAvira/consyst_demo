@@ -1,20 +1,101 @@
 # consyst_test
 
-A new Flutter project.
+# 📝 My Notes
 
-## Getting Started
+My Notes is a Flutter application that allows users to securely sign up, log in, and manage their personal notes. Built using **Flutter**, **Firebase**, and **GetX**, the app ensures a smooth, reactive, and modular experience for note-taking.
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+### 🔐 User Authentication
+- Sign up and log in using **Firebase Authentication**
+- Email/password-based authentication
+- Proper error handling (e.g., invalid email, wrong password, network errors)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🗒️ Notes Management
+- Authenticated users can **create**, **edit**, and **delete** personal notes
+- Each note includes:
+  - A **title**
+  - **Content**
+  - **Timestamp** (date & time)
+- All notes are stored in **Firebase Cloud Firestore**
+- Notes list view:
+  - Displays all notes by the authenticated user
+  - Tapping a note navigates to the note details screen
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 👤 User Profile
+- Profile screen displays the current user’s email
+- Log out functionality
 
-Platform  Firebase App Id
-android   1:130122799016:android:f9879264581bae589f2f9d
-ios       1:130122799016:ios:7ee3ecf23c43f3859f2f9d
+---
+
+
+
+---
+
+## 📦 Tech Stack
+
+| Technology      | Usage                          |
+|-----------------|--------------------------------|
+| **Flutter**     | UI Toolkit                     |
+| **Firebase**    | Authentication & Firestore     |
+| **GetX**        | State management & navigation  |
+| **MVC Pattern** | Clean and modular architecture |
+
+---
+
+## 🧠 State Management
+
+Used **GetX** for:
+- Routing and navigation
+- State updates and reactive variables
+- Dependency injection
+
+---
+
+## 📁 Project Structure
+
+```bash
+lib
+├── Colors.dart
+├── Constants.dart
+├── app
+│   ├── data
+│   ├── modules
+│   │   ├── authentication
+│   │   │   ├── bindings
+│   │   │   │   └── authentication_binding.dart
+│   │   │   ├── controllers
+│   │   │   │   └── authentication_controller.dart
+│   │   │   └── views
+│   │   │       ├── authentication_view.dart
+│   │   │       └── textformfields.dart
+│   │   ├── notes
+│   │   │   ├── bindings
+│   │   │   │   └── notes_binding.dart
+│   │   │   ├── controllers
+│   │   │   │   └── notes_controller.dart
+│   │   │   └── views
+│   │   │       ├── notes_detailed_view.dart
+│   │   │       ├── notes_edit_view.dart
+│   │   │       └── notes_view.dart
+│   │   ├── profile
+│   │   │   ├── bindings
+│   │   │   │   └── profile_binding.dart
+│   │   │   ├── controllers
+│   │   │   │   └── profile_controller.dart
+│   │   │   └── views
+│   │   │       └── profile_view.dart
+│   │   └── splashscreen
+│   │       ├── bindings
+│   │       │   └── splashscreen_binding.dart
+│   │       ├── controllers
+│   │       │   └── splashscreen_controller.dart
+│   │       └── views
+│   │           └── splashscreen_view.dart
+│   └── routes
+│       ├── app_pages.dart
+│       └── app_routes.dart
+├── enumConstants.dart
+├── firebase_options.dart
+├── main.dart
+└── provider_api.dart
