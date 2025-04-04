@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "130122799016",
+    "project_id": "consysttest-2c0f7",
+    "storage_bucket": "consysttest-2c0f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130122799016:android:f9879264581bae589f2f9d",
+        "android_client_info": {
+          "package_name": "com.consyst_test.consyst_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg4ZLlSi3wNhdQdClv4YI6WGzrLrCKikE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

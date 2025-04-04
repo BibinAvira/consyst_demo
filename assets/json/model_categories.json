@@ -1,0 +1,28 @@
+{
+	"listdata": [
+		{
+			"id": 1,
+			"title": "Explore",
+			"image": "assets/images/explore.jpeg",
+			"is_selected": false
+		},
+		{
+			"id": 2,
+			"title": "Entertainment",
+			"image": "assets/images/live_nation_cover.jpeg",
+			"is_selected": false
+		},
+		{
+			"id": 3,
+			"title": "Lifestyle",
+			"image": "aassets/images/images.jpeg",
+			"is_selected": false
+		},
+		{
+			"id": 4,
+			"title": "Travel",
+			"image": "assets/images/istockphoto-1500563478-612x612.jpg",
+			"is_selected": false
+		}
+	]
+}
